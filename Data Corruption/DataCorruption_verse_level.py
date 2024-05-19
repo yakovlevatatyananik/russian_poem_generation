@@ -96,6 +96,6 @@ class VerseCorruption_Verses:
 
       lines = self.text.split('<BR>')
       random_line = int(random.randint(0, len(lines)-1))
-      lines = lines.pop(random_line)
+      lines.pop(random_line)
       new_text = '<BR>'.join(lines)
       return new_text
